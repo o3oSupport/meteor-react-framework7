@@ -17,13 +17,6 @@ FlowRouter.route('/',{
   }
 });
 
-FlowRouter.route('/',{
-  action(){
-    mount(MainLayout, {
-      content: () => (<Home />)
-    });
-  }
-});
 
 FlowRouter.route('/page',{
   action(){

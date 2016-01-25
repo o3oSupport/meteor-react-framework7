@@ -3,9 +3,7 @@ var path = require('path');
 
 module.exports = {
   externals: {
-    'jquery': '$',
-    'react':'React',
-    'react-dom':'ReactDOM'
+    'jquery': '$'
   },
   resolve: {
     root: path.join(__dirname, '..', 'client'),

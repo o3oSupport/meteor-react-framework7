@@ -5,6 +5,7 @@
     "babel-loader": "^6.0.0",
     "babel-preset-react": "^6.0.15",
     "babel-preset-es2015": "^6.0.15",
-    "materialize-css": "0.97.5",
-    "react-mounter": "1.x.x"
+    "react-mounter": "1.x.x",
+
+    "form-serialize": "0.7.0"    
 }
