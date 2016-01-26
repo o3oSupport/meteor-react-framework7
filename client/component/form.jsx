@@ -8,9 +8,9 @@ const Form = React.createClass({
     // if (!text || !author) {
     //   return;
     // }
-
-    let form = document.querySelector('form');
-    console.log(form);
+    // let form = document.querySelector('form');
+    // let obj = serialize(form, { hash: true });
+    // console.log(obj);
     return;
   },
   mixins: [ReactMeteorData],
@@ -20,46 +20,59 @@ const Form = React.createClass({
   },
   render() {
     return (
-      <div className="row">
-        <form className="col s12" onSubmit={this.handleSubmit}>
-          <div className="row">
-            <div className="input-field col s6">
-              <input placeholder="Placeholder" id="first_name" type="text" className="validate" />
-              <label htmlFor="first_name">
-                First Name
-              </label>
-            </div>
-            <div className="input-field col s6">
-              <input id="last_name" type="text" className="validate" />
-              <label htmlFor="last_name">
-                Last Name
-              </label>
-            </div>
-          </div>
-          <div className="row">
-            <div className="input-field col s12">
-              <input disabled defaultValue="I am not editable" id="disabled" type="text" className="validate" />
-              <label htmlFor="disabled">Disabled</label>
-            </div>
-          </div>
-          <div className="row">
-            <div className="input-field col s12">
-              <input id="password" type="password" className="validate" />
-              <label htmlFor="password">Password</label>
-            </div>
-          </div>
-          <div className="row">
-            <div className="input-field col s12">
-              <input id="email" type="email" className="validate" />
-              <label htmlFor="email">Email</label>
-            </div>
-          </div>
-          <div className="row">
-            <button className="btn waves-effect waves-light" type="submit" name="action">
-                  Submit
-                  <i className="material-icons right">send</i>
-            </button>
-          </div>
+      <div>
+        <form onSubmit={this.handleSubmit}>
+        <div className="list-block">
+          <ul>
+            <li>
+              <div className="item-content">
+                <div className="item-media">
+                  <i className="icon icon-form-name" />
+                </div>
+                <div className="item-inner">
+                  <div className="item-title label">Name</div>
+                  <div className="item-input">
+                    <input type="text" name="username" placeholder="Your name" />
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div className="item-content">
+                <div className="item-media">
+                  <i className="icon icon-form-email" />
+                </div>
+                <div className="item-inner">
+                  <div className="item-title label">E-mail</div>
+                  <div className="item-input">
+                    <input type="email" name="email" placeholder="E-mail" />
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div className="item-content">
+                <div className="item-media">
+                <i className="icon icon-form-tel" />
+              </div>
+                <div className="item-inner">
+                  <div className="item-title label">Phone</div>
+                  <div className="item-input">
+                    <input type="tel" name="phone" placeholder="Phone" />
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div className="item-content buttons-row">
+                  <button className="button button-raised" type="submit" name="action">
+                        Submit
+                  </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+
 
         </form>
       </div>

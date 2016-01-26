@@ -32,8 +32,8 @@ jsx@0.2.3
 kadira:flow-router@2.10.0
 less@2.5.1
 livedata@1.0.15
+loftsteinn:framework7-ios@1.4.0
 logging@1.0.8
-materialize:materialize@0.97.5
 meteor@1.1.10
 meteor-base@1.0.1
 minifiers@1.1.7
@@ -51,6 +51,7 @@ reactive-var@1.0.6
 reload@1.1.4
 retry@1.0.4
 routepolicy@1.0.6
+semantic:ui-icon@2.1.4
 session@1.1.1
 spacebars@1.0.7
 spacebars-compiler@1.0.7

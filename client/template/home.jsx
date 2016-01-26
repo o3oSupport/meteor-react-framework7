@@ -16,6 +16,7 @@ const Home = React.createClass({
         </div>
         <Form/>
       </div>
+
     );
   }
 });

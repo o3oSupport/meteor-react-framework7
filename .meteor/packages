@@ -7,7 +7,7 @@
 meteor-base             # Packages every Meteor app needs to have
 mongo                   # The database Meteor supports right now
 session                 # Client-side reactive dictionary for your app
-jquery                  # Helpful client-side library
+# jquery                  # Helpful client-side library
 tracker                 # Meteor's client-side reactive programming library
 
 standard-minifiers      # JS/CSS minifiers run for production mode
@@ -20,4 +20,6 @@ react-meteor-data
 less
 
 kadira:flow-router
-materialize:materialize
+
+loftsteinn:framework7-ios
+semantic:ui-icon
