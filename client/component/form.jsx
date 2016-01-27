@@ -72,8 +72,6 @@ const Form = React.createClass({
             </li>
           </ul>
         </div>
-
-
         </form>
       </div>
     );
