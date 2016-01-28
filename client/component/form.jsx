@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Form = React.createClass({
+let Form = React.createClass({
   handleSubmit: function(e) {
     e.preventDefault();
     // var author = this.refs.author.value.trim();
