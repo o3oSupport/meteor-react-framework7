@@ -14,8 +14,8 @@ let Home = React.createClass({
   },
   render() {
     return (
-      <div class="pages navbar-through toolbar-through">
-        <Page>
+      <div className="pages navbar-through toolbar-through">
+        <Page name="index">
             <div className="content-block-title">
               Welcome To My Awesome App
             </div>
@@ -99,6 +99,7 @@ let Home = React.createClass({
               </p>
             </div>
         </Page>
+
         {/* Services Page*/}
         <Page name="services" cached>
             <div className="content-block">
