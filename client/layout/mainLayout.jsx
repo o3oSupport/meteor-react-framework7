@@ -1,9 +1,6 @@
 import React from 'react';
 
 let MainLayout = React.createClass({
-  getInitialState(){
-    return {content:this.props.content()};
-  },
   componentDidMount(){
     // Initialize your app
     var App = new Framework7({
@@ -22,6 +19,7 @@ let MainLayout = React.createClass({
     });
   },
   render() {
+    const content = this.props.content();
     return (
       <div className="view view-main">
         {/* Top Navbar*/}
@@ -39,7 +37,7 @@ let MainLayout = React.createClass({
             </div>
           </div>
           {/* Pages container*/}
-          {this.state.content}
+          {content}
           {/* Bottom Toolbar*/}
           <div className="toolbar">
             <div className="toolbar-inner">

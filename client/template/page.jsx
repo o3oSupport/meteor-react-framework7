@@ -8,9 +8,13 @@ let Page = React.createClass({
   },
   render() {
     return (
-      <div>
-        <h1>Page</h1>
-        <p><a href="/more">More</a></p>
+      <div className="pages navbar-through toolbar-through">
+        <div className="page">
+          <div className="page-content">
+            <h1>Page</h1>
+            <p><a href="/more">More</a></p>
+          </div>
+        </div>
       </div>
     )
   }

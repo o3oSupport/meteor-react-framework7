@@ -9,7 +9,7 @@ let Page = React.createClass({
   },
   render() {
     const { name,cached } = this.props;
-    const type = cached?'page cached' : 'page page-on-center';
+    const type = cached?'page cached' : 'page';
     return (
       <div data-page={ name } className={ type }>
         <div className="page-content">

@@ -38,6 +38,11 @@ FlowRouter.route('/more',{
   }
 });
 
+FlowRouter.route('/layout',{
+  action(){
+    mounter(MainLayout);
+  }
+})
 
 FlowRouter.notFound = {
   name: '404 Not Found',
