@@ -85,7 +85,7 @@ let Home = React.createClass({
         <Page name="about" cached>
             <div className="content-block">
               <p>
-                You may go <a href="#" className="back">back</a> or load <a href="#services">Services</a> page.
+                You may go <a href="#index" className="back">back</a> or load <a href="#services">Services</a> page.
               </p>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel commodo massa, eu adipiscing mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus ultricies dictum neque, non varius tortor fermentum at. Curabitur auctor cursus imperdiet. Nam molestie nisi nec est lacinia volutpat in a purus. Maecenas consectetur condimentum viverra. Donec ultricies nec sem vel condimentum. Phasellus eu tincidunt enim, sit amet convallis orci. Vestibulum quis fringilla dolor.  </p>
               <p>
@@ -104,7 +104,7 @@ let Home = React.createClass({
         <Page name="services" cached>
             <div className="content-block">
               <p>
-                You may go <a href="#" className="back">back</a> or load <a href="#about">About</a> page.
+                You may go <a href="#index" className="back">back</a> or load <a href="#about">About</a> page.
               </p>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel commodo massa, eu adipiscing mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus ultricies dictum neque, non varius tortor fermentum at. Curabitur auctor cursus imperdiet. Nam molestie nisi nec est lacinia volutpat in a purus. Maecenas consectetur condimentum viverra. Donec ultricies nec sem vel condimentum. Phasellus eu tincidunt enim, sit amet convallis orci. Vestibulum quis fringilla dolor.  </p>
               <p>

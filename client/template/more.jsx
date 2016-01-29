@@ -1,5 +1,4 @@
 import React from 'react';
-import Page from '../component/page';
 
 let More = React.createClass({
   mixins: [ReactMeteorData],
@@ -10,10 +9,12 @@ let More = React.createClass({
   render() {
     return (
       <div className="pages navbar-through toolbar-through">
-        <Page>
-          <h1>More</h1>
-          <p><a href="/">Back home</a></p>
-        </Page>
+        <div className="page">
+          <div className="page-content">
+            <h1>More</h1>
+            <p><a href="/">Back home</a></p>
+          </div>
+        </div>
       </div>
     )
   }

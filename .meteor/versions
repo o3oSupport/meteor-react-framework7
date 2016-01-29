@@ -1,3 +1,4 @@
+aircity:framework7@1.4.0
 autoupdate@1.2.4
 babel-compiler@5.8.24_1
 babel-runtime@0.1.4
@@ -32,7 +33,6 @@ jsx@0.2.3
 kadira:flow-router@2.10.0
 less@2.5.1
 livedata@1.0.15
-loftsteinn:framework7-ios@1.4.0
 logging@1.0.8
 meteor@1.1.10
 meteor-base@1.0.1

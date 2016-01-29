@@ -1,0 +1,17 @@
+Package.describe({
+  name: 'aircity:framework7',
+  version: '1.4.0',
+  // Brief, one-line summary of the package.
+  summary: 'framework7 v1.4.0',
+  // URL to the Git repository containing the source code for this package.
+  git: '',
+  // By default, Meteor will default to using README.md for documentation.
+  // To avoid submitting documentation, set this field to null.
+  documentation: 'README.md'
+});
+
+Package.onUse(function(api) {
+  api.addFiles('framework7.js','client');
+  api.addAssets('framework7.js.map','client');
+  api.addFiles('initialize.js','client');
+});

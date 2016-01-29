@@ -8,7 +8,7 @@ let MainLayout = React.createClass({
     });
 
     // Export selectors engine
-    var $$ = Dom7;
+    var $ = Dom7;
 
     // Add main View
     var mainView = App.addView('.view-main', {
