@@ -1,6 +1,9 @@
 import React from 'react';
 
 const MainLayout = React.createClass({
+  getInitialState: function() {
+    return {title:'业聊'};
+  },
   componentDidMount(){
     // Initialize your app
     var App = new Framework7({
@@ -20,14 +23,16 @@ const MainLayout = React.createClass({
   },
   render() {
     const content = this.props.content();
+    const title = this.state.title;
     return (
       <div className="view view-main">
         {/* Top Navbar*/}
         <div className="navbar">
           <div className="navbar-inner">
             {/* sliding */}
+            <div className="left sliding"><a href="#" className="back link"> <i className="icon icon-back"></i><span>返回</span></a></div>
             <div className="center sliding">
-              Awesome App
+              {title}
             </div>
             <div className="right">
                 <a href="#" className="link icon-only open-panel">
@@ -35,20 +40,12 @@ const MainLayout = React.createClass({
                 </a>
               </div>
             </div>
-          </div>
+        </div>
           {/* Pages container*/}
           {content}
           {/* Bottom Toolbar*/}
-          <div className="toolbar">
-            <div className="toolbar-inner">
-              {/* Toolbar links */}
-              <a href="#" className="link">
-                Link 1
-              </a>
-              <a href="#" className="link">
-                Link 2
-              </a>
-            </div>
+          <div id="toolbar">
+
           </div>
         </div>
     );

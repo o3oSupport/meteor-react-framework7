@@ -1138,6 +1138,9 @@ html.ios-gt-8 .toolbar b {
   background: #00bcd4;
   color: #fff;
 }
+.navbar a {
+  color: #fff;
+}
 .toolbar {
   background: #f7f7f8;
 }
@@ -2106,6 +2109,45 @@ i.icon.icon-plus {
   line-height: 20px;
   text-align: center;
   font-weight: 100;
+}
+.navbar {
+  /* === Icons === */
+}
+.navbar i.icon {
+  display: inline-block;
+  vertical-align: middle;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-style: normal;
+  position: relative;
+}
+.navbar i.icon.icon-back {
+  width: 12px;
+  height: 20px;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2012%2020'%3E%3Cpath%20d%3D'M10%2C0l2%2C2l-8%2C8l8%2C8l-2%2C2L0%2C10L10%2C0z'%20fill%3D'%23fff'%2F%3E%3C%2Fsvg%3E");
+}
+.navbar i.icon.icon-forward {
+  width: 12px;
+  height: 20px;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2012%2020'%3E%3Cpath%20d%3D'M2%2C20l-2-2l8-8L0%2C2l2-2l10%2C10L2%2C20z'%20fill%3D'%23fff'%2F%3E%3C%2Fsvg%3E");
+}
+.navbar i.icon.icon-bars {
+  width: 21px;
+  height: 14px;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2021%2014'%3E%3Cpath%20fill%3D'%23fff'%20d%3D'M0%2C0h2v2H0V0z%20M4%2C0h17v1H4V0z%20M0%2C6h2v2H0V6z%20M4%2C6h17v1H4V6z%20M0%2C12h2v2H0V12z%20M4%2C12h17v1H4V12z'%2F%3E%3C%2Fsvg%3E");
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2ddpx) {
+  .navbar i.icon.icon-bars {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2042%2026'%3E%3Cpath%20fill%3D'%23fff'%20d%3D'M0%2C0h4v4H0V0z%20M8%2C1h34v2H8V1z%20M0%2C11h4v4H0V11z%20M8%2C12h34v2H8V12z%20M0%2C22h4v4H0V22z%20M8%2C23h34v2H8V23z'%2F%3E%3C%2Fsvg%3E");
+    height: 13px;
+  }
+}
+.navbar i.icon.icon-next {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2015%2015'%3E%3Cg%3E%3Cpath%20fill%3D'%23fff'%20d%3D'M1%2C1.6l11.8%2C5.8L1%2C13.4V1.6%20M0%2C0v15l15-7.6L0%2C0L0%2C0z'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+}
+.navbar i.icon.icon-prev {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2015%2015'%3E%3Cg%3E%3Cpath%20fill%3D'%23fff'%20d%3D'M14%2C1.6v11.8L2.2%2C7.6L14%2C1.6%20M15%2C0L0%2C7.6L15%2C15V0L15%2C0z'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
 }
 .badge {
   font-size: 13px;

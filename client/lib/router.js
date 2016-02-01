@@ -13,14 +13,23 @@ import Home from '../template/home';
 import Page from '../template/page';
 import More from '../template/more';
 
+import List from '../template/list';
+
 FlowRouter.route('/',{
   action(){
     mounter(MainLayout, {
-      content: () => (<Home />)
+      content: () => (<List />)
     });
   }
 });
 
+FlowRouter.route('/home',{
+  action(){
+    mounter(MainLayout,{
+      content: () =>(<Home/>)
+    });
+  }
+})
 
 FlowRouter.route('/page',{
   action(){
