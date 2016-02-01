@@ -1,6 +1,6 @@
 import React from 'react';
 
-let NoMatch = () => (
+const NoMatch = () => (
   <h1>Not found</h1>
 );
 

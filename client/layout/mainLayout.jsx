@@ -1,6 +1,6 @@
 import React from 'react';
 
-let MainLayout = React.createClass({
+const MainLayout = React.createClass({
   componentDidMount(){
     // Initialize your app
     var App = new Framework7({

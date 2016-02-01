@@ -1,6 +1,6 @@
 import React from 'react';
 
-let Page = React.createClass({
+const Page = React.createClass({
   mixins: [ReactMeteorData],
   getMeteorData() {
     return {

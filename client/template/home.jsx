@@ -3,7 +3,7 @@ import Form from '../component/form';
 import Page from '../component/page';
 
 
-let Home = React.createClass({
+const Home = React.createClass({
   mixins: [ReactMeteorData],
   getMeteorData() {
     return {

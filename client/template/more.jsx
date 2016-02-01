@@ -1,6 +1,8 @@
 import React from 'react';
+import Form from '../component/form';
+import OForm from '../component/oform';
 
-let More = React.createClass({
+const More = React.createClass({
   mixins: [ReactMeteorData],
   getMeteorData() {
     return {
@@ -13,6 +15,9 @@ let More = React.createClass({
           <div className="page-content">
             <h1>More</h1>
             <p><a href="/">Back home</a></p>
+            <Form/>
+
+            <OForm/>
           </div>
         </div>
       </div>
