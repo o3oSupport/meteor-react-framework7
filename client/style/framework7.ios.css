@@ -12,7 +12,7 @@
  * 
  * Licensed under MIT
  * 
- * Released on: February 1, 2016
+ * Released on: February 2, 2016
  */
 html,
 body {
@@ -1116,7 +1116,7 @@ html.android .page-from-center-to-right:before {
 }
 .navbar,
 .toolbar {
-  height: 44px;
+  height: 50px;
   width: 100%;
   box-sizing: border-box;
   font-size: 17px;
@@ -1147,8 +1147,8 @@ html.ios-gt-8 .toolbar b {
 .navbar a.link,
 .toolbar a.link,
 .subnavbar a.link {
-  line-height: 44px;
-  height: 44px;
+  line-height: 50px;
+  height: 50px;
   text-decoration: none;
   position: relative;
   display: -webkit-box;
@@ -1195,7 +1195,7 @@ html:not(.watch-active-state) .subnavbar a.link:active,
 .navbar a.icon-only,
 .toolbar a.icon-only,
 .subnavbar a.icon-only {
-  min-width: 44px;
+  min-width: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -1257,7 +1257,7 @@ html.pixel-ratio-3 .navbar:after {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  line-height: 44px;
+  line-height: 50px;
   -webkit-flex-shrink: 10;
   -ms-flex: 0 10 auto;
   flex-shrink: 10;
@@ -1313,7 +1313,7 @@ html.ios-gt-8 .navbar .center {
   transform: translate3d(0, 0, 0);
 }
 .subnavbar {
-  height: 44px;
+  height: 50px;
   width: 100%;
   position: absolute;
   left: 0;
@@ -1655,11 +1655,11 @@ html.pixel-ratio-3 .toolbar:before {
   position: absolute;
 }
 .subnavbar ~ .page-content {
-  padding-top: 44px;
+  padding-top: 50px;
 }
 .navbar-through .page-content,
 .navbar-fixed .page-content {
-  padding-top: 44px;
+  padding-top: 50px;
 }
 .navbar-through .with-subnavbar .page-content,
 .navbar-fixed .with-subnavbar .page-content,
@@ -1667,19 +1667,19 @@ html.pixel-ratio-3 .toolbar:before {
 .navbar-fixed .page-content.with-subnavbar,
 .navbar-through .subnavbar ~ .page-content,
 .navbar-fixed .subnavbar ~ .page-content {
-  padding-top: 88px;
+  padding-top: 100px;
 }
 .navbar-through .page .subnavbar,
 .navbar-fixed .page .subnavbar,
 .navbar-through.page .subnavbar,
 .navbar-fixed.page .subnavbar {
-  top: 44px;
+  top: 50px;
 }
 .toolbar-through .page-content,
 .toolbar-fixed .page-content,
 .tabbar-through .page-content,
 .tabbar-fixed .page-content {
-  padding-bottom: 44px;
+  padding-bottom: 50px;
 }
 .tabbar-labels-fixed .page-content,
 .tabbar-labels-through .page-content {
@@ -1720,7 +1720,7 @@ html.pixel-ratio-3 .toolbar:before {
 .navbar.navbar-hidden ~ .page .list-group-title {
   -webkit-transition-duration: 400ms;
   transition-duration: 400ms;
-  top: -44px;
+  top: -50px;
 }
 .navbar.navbar-hidden ~ .page-content .subnavbar,
 .navbar.navbar-hidden ~ .pages .subnavbar,
@@ -1736,7 +1736,7 @@ html.pixel-ratio-3 .toolbar:before {
 .page.no-navbar.with-subnavbar .page-content,
 .with-subnavbar .page.no-navbar .page-content,
 .page.no-navbar .page-content.with-subnavbar {
-  padding-top: 44px;
+  padding-top: 50px;
 }
 .toolbar.toolbar-hiding,
 .tabbar.toolbar-hiding,
@@ -1927,13 +1927,13 @@ html:not(.watch-active-state) .searchbar.searchbar-active .searchbar-cancel:acti
 .navbar-through .page > .searchbar,
 .navbar-fixed > .searchbar,
 .navbar-through > .searchbar {
-  top: 44px;
+  top: 50px;
 }
 .navbar-fixed .page > .searchbar ~ .page-content,
 .navbar-through .page > .searchbar ~ .page-content,
 .navbar-fixed > .searchbar ~ .page-content,
 .navbar-through > .searchbar ~ .page-content {
-  padding-top: 88px;
+  padding-top: 94px;
 }
 /* === Message Bar === */
 .messagebar {
@@ -1988,10 +1988,10 @@ html:not(.watch-active-state) .searchbar.searchbar-active .searchbar-cancel:acti
   flex-shrink: 0;
 }
 .messagebar ~ .page-content {
-  padding-bottom: 44px;
+  padding-bottom: 50px;
 }
 .page.no-toolbar .messagebar ~ .page-content {
-  padding-bottom: 44px;
+  padding-bottom: 50px;
 }
 .hidden-toolbar .messagebar {
   -webkit-transform: translate3d(0, 0, 0);
@@ -4443,9 +4443,9 @@ html.pixel-ratio-3 .picker-modal .toolbar:before {
   transform: scaleY(0.33);
 }
 .picker-modal .toolbar + .picker-modal-inner {
-  height: -webkit-calc(100% - 44px);
-  height: -moz-calc(100% - 44px);
-  height: calc(100% - 44px);
+  height: -webkit-calc(100% - 50px);
+  height: -moz-calc(100% - 50px);
+  height: calc(100% - 50px);
 }
 .picker-modal.picker-modal-inline,
 .popover .picker-modal {
@@ -5141,11 +5141,11 @@ html.with-statusbar-overlay body > .progressbar {
 .pull-to-refresh-layer {
   position: absolute;
   position: relative;
-  margin-top: -44px;
+  margin-top: -50px;
   left: 0;
   top: 0;
   width: 100%;
-  height: 44px;
+  height: 50px;
 }
 .pull-to-refresh-layer .preloader {
   position: absolute;
@@ -5173,10 +5173,10 @@ html.with-statusbar-overlay body > .progressbar {
   transition-duration: 300ms;
 }
 .pull-to-refresh-content.pull-to-refresh-no-navbar {
-  margin-top: -44px;
-  height: -webkit-calc(100% + 44px);
-  height: -moz-calc(100% + 44px);
-  height: calc(100% + 44px);
+  margin-top: -50px;
+  height: -webkit-calc(100% + 50px);
+  height: -moz-calc(100% + 50px);
+  height: calc(100% + 50px);
 }
 .pull-to-refresh-content.pull-to-refresh-no-navbar .pull-to-refresh-layer {
   margin-top: 0;
@@ -5191,8 +5191,8 @@ html.with-statusbar-overlay body > .progressbar {
   animation: none;
 }
 .pull-to-refresh-content.refreshing {
-  -webkit-transform: translate3d(0, 44px, 0);
-  transform: translate3d(0, 44px, 0);
+  -webkit-transform: translate3d(0, 50px, 0);
+  transform: translate3d(0, 50px, 0);
 }
 .pull-to-refresh-content.refreshing .pull-to-refresh-arrow {
   visibility: hidden;
@@ -5838,13 +5838,13 @@ body > .photo-browser .toolbar {
   opacity: 0;
 }
 .toolbar ~ .photo-browser-captions {
-  bottom: 44px;
+  bottom: 50px;
   -webkit-transform: translate3d(0, 0px, 0);
   transform: translate3d(0, 0px, 0);
 }
 .photo-browser-exposed .toolbar ~ .photo-browser-captions {
-  -webkit-transform: translate3d(0, 44px, 0);
-  transform: translate3d(0, 44px, 0);
+  -webkit-transform: translate3d(0, 50px, 0);
+  transform: translate3d(0, 50px, 0);
 }
 .toolbar ~ .photo-browser-captions.photo-browser-captions-exposed {
   -webkit-transform: translate3d(0, 0px, 0);

@@ -9,27 +9,52 @@ const mounter = withOptions({
 import MainLayout from '../layout/mainLayout';
 import NoMatch from '../layout/noMatch';
 
-import Home from '../template/home';
+
 import Page from '../template/page';
 import More from '../template/more';
 
-import List from '../template/list';
+//发布服务
+import Publish from '../template/publish';
+//个人资料
+import Usercenter from '../template/usercenter';
+//业聊
+import Index from '../template/index';
+import Home from '../template/home';
 
-FlowRouter.route('/',{
-  action(){
-    mounter(MainLayout, {
-      content: () => (<List />)
-    });
-  }
+
+FlowRouter.route('/login',{
+
 });
 
 FlowRouter.route('/home',{
   action(){
-    mounter(MainLayout,{
-      content: () =>(<Home/>)
+    mounter(Home);
+  }
+});
+
+FlowRouter.route('/',{
+  action(){
+    mounter(MainLayout, {
+      content: () => (<Index />)
     });
   }
-})
+});
+
+FlowRouter.route('/publish',{
+  action(){
+    mounter(MainLayout,{
+      content: () => (<Publish />)
+    });
+  }
+});
+
+FlowRouter.route('/usercenter',{
+  action(){
+    mounter(MainLayout,{
+      content: () => (<Usercenter />)
+    });
+  }
+});
 
 FlowRouter.route('/page',{
   action(){

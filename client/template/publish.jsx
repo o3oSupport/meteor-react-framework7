@@ -1,7 +1,9 @@
 import React from 'react';
 
-
-const List = React.createClass({
+const Publish = React.createClass({
+  componentDidMount() {
+     Session.set('title',"发布服务");
+  },
   render() {
     return (
       <div className="pages navbar-through toolbar-through">
@@ -60,10 +62,13 @@ const List = React.createClass({
               </ul>
             </div>
           </div>
+          <div className="boardwalk">
+            <a className="button">提交</a>
+          </div>
         </div>
       </div>
     );
   }
 });
 
-export default List;
+export default Publish;
