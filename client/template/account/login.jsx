@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Home = React.createClass({
+const Login = React.createClass({
   componentDidMount() {
 
   },
@@ -13,4 +13,4 @@ const Home = React.createClass({
   }
 });
 
-export default Home;
+export default Login;

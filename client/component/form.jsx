@@ -1,21 +1,21 @@
 import React from 'react';
 import Input from './input';
 
-const Form = React.createClass({
-  handleSubmit: function(e) {
-    e.preventDefault();
-    return;
-  },
-  mixins: [ReactMeteorData],
-  getMeteorData() {
-    return {
-    };
-  },
+
+class Form extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {something: props.something};    
+  }
   render() {
     return (
       <div>
         <div className="list-block">
           <ul>
+            <li>
+              {this.state.something}ssss
+
+            </li>
             <li>
               <Input displayName="haha" name="haha" icon="1" />
             </li>
@@ -27,6 +27,7 @@ const Form = React.createClass({
       </div>
     );
   }
-});
+
+}
 
 export default Form;

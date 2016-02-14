@@ -17,10 +17,10 @@ const NavBar = React.createClass({
     }
   },
   render() {
-    const navbar = this.navbar();
+    const navbar = this.data.navbar;
     return (
-      <div id="navbar" className="navbar">
-              {navbar}
+      <div className="navbar">
+        <Default/>
       </div>
 
     );

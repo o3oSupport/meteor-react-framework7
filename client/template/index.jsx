@@ -8,7 +8,7 @@ const Index = React.createClass({
     };
   },
   componentDidMount() {
-
+    Session.set("navbar","main");
   },
   render() {
     return (

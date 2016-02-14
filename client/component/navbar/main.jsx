@@ -14,7 +14,7 @@ const Main = React.createClass({
           </a>
         </div>
         <div className="center sliding">
-          app
+          app-
         </div>
         <div className="right">
           <a href="#" className="link icon-only open-panel">
