@@ -1,5 +1,6 @@
 {
     "react": "0.14.6",
+    "react-dom": "0.14.6",      
     "domready": "^1.0.8",
     "babel-core": "^6.0.0",
     "babel-loader": "^6.0.0",
