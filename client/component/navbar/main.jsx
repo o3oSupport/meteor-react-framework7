@@ -10,7 +10,6 @@ const Main = React.createClass({
           <a href="#" className="back link">
             <i className="icon icon-back">
             </i>
-            <span>返回</span>
           </a>
         </div>
         <div className="center sliding">

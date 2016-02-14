@@ -21,14 +21,34 @@ import Usercenter from '../template/usercenter';
 import Index from '../template/index';
 import Home from '../template/home';
 
+import {Account,Register,Login} from '../template/account/app';
 
-FlowRouter.route('/login',{
-
-});
 
 FlowRouter.route('/home',{
   action(){
     mounter(Home);
+  }
+});
+
+FlowRouter.route('/account',{
+  action(){
+    mounter(Account);
+  }
+});
+
+FlowRouter.route('/login',{
+  action(){
+    mounter(MainLayout,{
+      content: () => (<Login />)
+    });
+  }
+});
+
+FlowRouter.route('/register',{
+  action(){
+    mounter(MainLayout,{
+      content: () => (<Register />)
+    });
   }
 });
 

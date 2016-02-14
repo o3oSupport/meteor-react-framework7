@@ -7,6 +7,11 @@ const Default = React.createClass({
       title: Session.get('title')
     }
   },
+  componentDidMount() {
+    $(".back.link").click(function(){
+      window.history.back();
+    });
+  },
   render() {
     const title = this.data.title;
     return (
@@ -16,7 +21,6 @@ const Default = React.createClass({
           <a href="#" className="back link">
             <i className="icon icon-back">
             </i>
-            <span>返回</span>
           </a>
         </div>
         <div className="center sliding">

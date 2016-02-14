@@ -3121,7 +3121,6 @@ html.android .label-switch input[type="checkbox"] + .checkbox:before {
   text-align: center;
   display: block;
   border-radius: 5px;
-  line-height: 36px;
   box-sizing: border-box;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -3129,7 +3128,8 @@ html.android .label-switch input[type="checkbox"] + .checkbox:before {
   appearance: none;
   padding: 0 10px;
   margin: 0;
-  height: 36px;
+/* line-height: 36px; */  
+/*  height: 36px; */
   white-space: nowrap;
   position: relative;
   overflow: hidden;

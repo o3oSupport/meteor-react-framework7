@@ -1,0 +1,280 @@
+@default-font-size:14px;
+
+.clearfix() {
+    &:before,
+    &:after {
+        display: table;
+        content: "";
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+.no-bullet() {
+    list-style-image: none;
+    list-style-type: none;
+    margin-left: 0;
+}
+
+.no-bullets() {
+    list-style: none;
+    li {
+        .no-bullet();
+    }
+}
+
+.make-row() {
+    .clearfix();
+}
+
+.make-column(...) {
+    display: block;
+    float: left;
+}
+
+.pull-left() {
+    float: left;
+}
+.pull-right() {
+    float: right;
+}
+.text-center() {
+  text-align: center;
+}
+
+.full-page() {
+  width: 100%;
+  height: 100%;
+}
+
+.background-size-cover() {
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+}
+
+.background-size-contain() {
+    -webkit-background-size: contain;
+       -moz-background-size: contain;
+         -o-background-size: contain;
+            background-size: contain;
+}
+
+.no-border() {
+  border: 0;
+}
+.no-margin() {
+  margin: 0;
+}
+.no-padding() {
+  padding: 0;
+}
+
+.margin-rem(@px-size) {
+    @l: length(@px-size);
+    .map(1) {
+        @top: unit(extract(@px-size, 1));
+        @right: @top;
+        @bottom: @top;
+        @left: @top;
+    }
+    .map(2) {
+        @top: unit(extract(@px-size, 1));
+        @right: unit(extract(@px-size, 2));
+        @bottom: @top;
+        @left: @right;
+    }
+    .map(3) {
+        @top: unit(extract(@px-size, 1));
+        @right: unit(extract(@px-size, 2));
+        @bottom: unit(extract(@px-size, 3));
+        @left: @right;
+    }
+    .map(4) {
+        @top: unit(extract(@px-size, 1));
+        @right: unit(extract(@px-size, 2));
+        @bottom: unit(extract(@px-size, 3));
+        @left: unit(extract(@px-size, 4));
+    }
+    .map(@l);
+
+    .reduce() {
+        @px: unit(@top, px);
+        @rem: unit(@top / @default-font-size, rem);
+    }
+    .reduce() when not (@right = @top) {
+        @px: unit(@top, px) unit(@right, px);
+        @rem: unit(@top / @default-font-size, rem) unit(@right / @default-font-size, rem);
+    }
+    .reduce() when not (@bottom = @top) {
+        @px: unit(@top, px) unit(@right, px) unit(@bottom, px);
+        @rem: unit(@top / @default-font-size, rem) unit(@right / @default-font-size, rem) unit(@bottom / @default-font-size, rem);
+    }
+    .reduce() when not (@left = @right) {
+        @px: unit(@top, px) unit(@right, px) unit(@bottom, px) unit(@left, px);
+        @rem: unit(@top / @default-font-size, rem) unit(@right / @default-font-size, rem) unit(@bottom / @default-font-size, rem) unit(@left / @default-font-size, rem);
+    }
+    .reduce();
+
+    margin: @px;
+    margin: @rem;
+}
+
+.margin-top-rem(@px-size) {
+    @rem-size: unit(@px-size) / unit(@default-font-size);
+    @px-size-no-unit: unit(@px-size);
+    margin-top: unit(@px-size-no-unit, px);
+    margin-top: unit(@rem-size, rem);
+}
+
+.margin-bottom-rem(@px-size) {
+    @rem-size: unit(@px-size) / unit(@default-font-size);
+    @px-size-no-unit: unit(@px-size);
+    margin-bottom: unit(@px-size-no-unit, px);
+    margin-bottom: unit(@rem-size, rem);
+}
+
+.margin-left-rem(@px-size) {
+    @rem-size: unit(@px-size) / unit(@default-font-size);
+    @px-size-no-unit: unit(@px-size);
+    margin-left: unit(@px-size-no-unit, px);
+    margin-left: unit(@rem-size, rem);
+}
+
+.margin-right-rem(@px-size) {
+    @rem-size: unit(@px-size) / unit(@default-font-size);
+    @px-size-no-unit: unit(@px-size);
+    margin-right: unit(@px-size-no-unit, px);
+    margin-right: unit(@rem-size, rem);
+}
+
+.padding-rem(@px-size) {
+    @l: length(@px-size);
+    .map(1) {
+        @top: unit(extract(@px-size, 1));
+        @right: @top;
+        @bottom: @top;
+        @left: @top;
+    }
+    .map(2) {
+        @top: unit(extract(@px-size, 1));
+        @right: unit(extract(@px-size, 2));
+        @bottom: @top;
+        @left: @right;
+    }
+    .map(3) {
+        @top: unit(extract(@px-size, 1));
+        @right: unit(extract(@px-size, 2));
+        @bottom: unit(extract(@px-size, 3));
+        @left: @right;
+    }
+    .map(4) {
+        @top: unit(extract(@px-size, 1));
+        @right: unit(extract(@px-size, 2));
+        @bottom: unit(extract(@px-size, 3));
+        @left: unit(extract(@px-size, 4));
+    }
+    .map(@l);
+
+    .reduce() {
+        @px: unit(@top, px);
+        @rem: unit(@top / @default-font-size, rem);
+    }
+    .reduce() when not (@right = @top) {
+        @px: unit(@top, px) unit(@right, px);
+        @rem: unit(@top / @default-font-size, rem) unit(@right / @default-font-size, rem);
+    }
+    .reduce() when not (@bottom = @top) {
+        @px: unit(@top, px) unit(@right, px) unit(@bottom, px);
+        @rem: unit(@top / @default-font-size, rem) unit(@right / @default-font-size, rem) unit(@bottom / @default-font-size, rem);
+    }
+    .reduce() when not (@left = @right) {
+        @px: unit(@top, px) unit(@right, px) unit(@bottom, px) unit(@left, px);
+        @rem: unit(@top / @default-font-size, rem) unit(@right / @default-font-size, rem) unit(@bottom / @default-font-size, rem) unit(@left / @default-font-size, rem);
+    }
+    .reduce();
+
+    padding: @px;
+    padding: @rem;
+}
+
+.padding-top-rem(@px-size) {
+    @rem-size: unit(@px-size) / unit(@default-font-size);
+    @px-size-no-unit: unit(@px-size);
+    padding-top: unit(@px-size-no-unit, px);
+    padding-top: unit(@rem-size, rem);
+}
+
+.padding-bottom-rem(@px-size) {
+    @rem-size: unit(@px-size) / unit(@default-font-size);
+    @px-size-no-unit: unit(@px-size);
+    padding-bottom: unit(@px-size-no-unit, px);
+    padding-bottom: unit(@rem-size, rem);
+}
+
+.padding-left-rem(@px-size) {
+    @rem-size: unit(@px-size) / unit(@default-font-size);
+    @px-size-no-unit: unit(@px-size);
+    padding-left: unit(@px-size-no-unit, px);
+    padding-left: unit(@rem-size, rem);
+}
+
+.padding-right-rem(@px-size) {
+    @rem-size: unit(@px-size) / unit(@default-font-size);
+    @px-size-no-unit: unit(@px-size);
+    padding-right: unit(@px-size-no-unit, px);
+    padding-right: unit(@rem-size, rem);
+}
+
+.height(@px-size) {
+    @rem-size: unit(@px-size) / unit(@default-font-size);
+    @px-size-no-unit: unit(@px-size);
+    height: unit(@px-size-no-unit, px);
+    height: unit(@rem-size, rem);
+}
+
+.min-height(@px-size) {
+    @rem-size: unit(@px-size) / unit(@default-font-size);
+    @px-size-no-unit: unit(@px-size);
+    min-height: unit(@px-size-no-unit, px);
+    min-height: unit(@rem-size, rem);
+}
+
+.line-height(@px-size) {
+    @rem-size: unit(@px-size) / unit(@default-font-size);
+    @px-size-no-unit: unit(@px-size);
+    line-height: unit(@px-size-no-unit, px);
+    line-height: unit(@rem-size, rem);
+}
+
+
+.width(@px-size) {
+    @rem-size: unit(@px-size) / unit(@default-font-size);
+    @px-size-no-unit: unit(@px-size);
+    width: unit(@px-size-no-unit, px);
+    width: unit(@rem-size, rem);
+}
+
+.wrap() {
+  text-wrap: wrap;
+  white-space: -moz-pre-wrap;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+// size settings
+.size(@size) {
+    width: @size;
+    height: @size;
+}
+.size(@wdith, @height) {
+    width: @wdith;
+    height: @height;
+}
+
+.auto-size(@wdith, @height) {
+    .width(@wdith);
+    .height(@height);
+}

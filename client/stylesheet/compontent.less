@@ -1,0 +1,40 @@
+@import (reference) 'bracket.import.less';
+
+.circle-box {
+  display: inline-block;
+  .auto-size(60px,60px);  
+  .line-height(60px);
+  vertical-align: middle;
+  position: relative;
+  &:before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 1px;    
+  }
+
+  i.icon {
+    font-size: 2em;
+  }
+}
+
+@blue:#69a5e1;
+@green:#8ec81c;
+@red:#f56467;
+
+.blue-icon {
+  color: @blue;
+  border-color: @blue;
+}
+
+.green-icon {
+  color: @green;
+  border-color: @green;  
+}
+
+.red-icon {
+  color: @red;
+  border-color: @red;    
+}

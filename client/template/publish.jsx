@@ -1,8 +1,11 @@
 import React from 'react';
 
 const Publish = React.createClass({
+  componentWillMount() {
+    Session.set("title","发布服务");    
+  },  
   componentDidMount() {
-     Session.set('title',"发布服务");
+    
   },
   render() {
     return (

@@ -1,12 +1,14 @@
 import React from 'react';
 
-const Pager = React.createClass({
+const Container = React.createClass({
   render() {
     return (
-      <div className="pages navbar-through">
+      <div className="pages navbar-through toolbar-through">
         <div data-page="index" className="page">
           <div className="page-content">
+            <div className="page-container">
              {this.props.children}
+            </div>
           </div>
         </div>
       </div>
@@ -14,4 +16,4 @@ const Pager = React.createClass({
   }
 });
 
-export default Pager;
+export default Container;

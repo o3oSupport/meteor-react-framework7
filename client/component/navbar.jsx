@@ -7,7 +7,7 @@ const NavBar = React.createClass({
     return {
       navbar: Session.get('navbar')
     }
-  },
+  },  
   navbar() {
     if(this.data.navbar == 'main') {
       return <Main/>
@@ -22,7 +22,6 @@ const NavBar = React.createClass({
       <div className="navbar">
         <Default/>
       </div>
-
     );
   }
 });
