@@ -3,7 +3,7 @@ import React from 'react';
 const Container = React.createClass({
   render() {
     return (
-      <div className="pages navbar-through toolbar-through">
+      <div className="pages navbar-through">
         <div data-page="index" className="page">
           <div className="page-content">
             <div className="page-container">

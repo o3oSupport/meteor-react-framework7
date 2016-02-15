@@ -1,0 +1,22 @@
+.box {
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    height: 100%;
+    -webkit-box-align: start;
+    text-align: center;
+}
+.logo {
+  max-width: 50%;
+}
+.navbar-through .page-content, .navbar-fixed .page-content {
+  padding-bottom: 80px;
+  padding-top: 160px;
+}
+
+.slogon {
+  margin-top: 20px;
+  font-size: 16px;
+  color:#21B7C5;
+  font-weight: 700;
+  letter-spacing: 1px;
+}

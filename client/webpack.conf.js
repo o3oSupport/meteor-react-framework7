@@ -15,7 +15,9 @@ module.exports = {
                 'es2015'
             ]
         }
-       }
+      }
+      ,{ test: /\.css$/, loaders: ["style", "css"] },
+      ,{ test: /\.less$/, loaders: ["style","css", "less"] }      
     ]
   },
   hotMiddleware: {

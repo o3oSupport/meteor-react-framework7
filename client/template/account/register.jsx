@@ -44,21 +44,23 @@ const Register = React.createClass({
             </div>
           </div>
           <div className="field">
-            
+              <br/>
           </div>
           <div className="field text-center">
               <div className="text-hint">
                 第三方登录
               </div>
               <div>
-            <div className="circle-box blue-icon">
-                  <i className="qq icon"></i>      
-            </div>
-            <div className="circle-box green-icon">
-                  <i className="wechat icon"></i>
-            </div>
-            <div className="circle-box red-icon">
-                  <i className="weibo icon"></i>
+            <div className="circle-box-container">
+                <div className="circle-box blue-icon">
+                      <i className="qq icon"></i>      
+                </div>
+                <div className="circle-box green-icon">
+                      <i className="wechat icon"></i>
+                </div>
+                <div className="circle-box red-icon">
+                      <i className="weibo icon"></i>
+                </div>      
             </div>
             </div>
           </div>

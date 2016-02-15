@@ -8,7 +8,7 @@ const Page = React.createClass({
   },
   render() {
     return (
-      <div className="pages navbar-through toolbar-through">
+      <div className="pages navbar-through">
         <div className="page">
           <div className="page-content">
             <h1>Page</h1>

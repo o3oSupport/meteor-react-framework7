@@ -1,22 +1,24 @@
 @import (reference) 'bracket.import.less';
 
+.circle-box-container {
+  margin-top: 15px;
+}
 .circle-box {
   display: inline-block;
-  .auto-size(60px,60px);  
+  .auto-size(60px,60px);
   .line-height(60px);
   vertical-align: middle;
   position: relative;
-  &:before {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    border-style: solid;
-    border-width: 1px;    
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 1px;
+  margin-right: 20px;
+  &:last-child {
+    margin-right: 0;
   }
-
   i.icon {
     font-size: 2em;
+    vertical-align: -2px;
   }
 }
 
@@ -31,10 +33,10 @@
 
 .green-icon {
   color: @green;
-  border-color: @green;  
+  border-color: @green;
 }
 
 .red-icon {
   color: @red;
-  border-color: @red;    
+  border-color: @red;
 }
